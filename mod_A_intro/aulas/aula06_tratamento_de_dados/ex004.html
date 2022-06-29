@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de tipos</title>
+    <style>
+        body {
+            font: normal 20pt Verdana;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //conversão de tipos
+        /*
+        Number.parseInt(n) - converte a var 'n' em int
+        Number.parseFloat(n) - converte a var 'n' em float
+        String(n) - transforma a var 'n' em string
+        n.toString() - transforma a var 'n' em string
+        s.length - quantidade de caracteres da string
+        s.toUpperCase() - transforma todas as letras da string em maiusculas
+        s.toLowerCase() - transforma todas as letras da string em minusculas
+        */
+
+        //formatando strings
+        
+        var nome = window.prompt('Qual é o seu nome? ')
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.<br>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}`)
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`)
+        
+        //formatando números
+
+        var peso = Number.parseFloat(prompt('Qual é o seu peso?'))
+        document.write(`Seu peso é: ${peso.toFixed(2)}`) //toFixed() para definir o número de casas decimais.
+
+        //toFixed().replace('.',',') para SUBSTITUIR o ponto pela vírgula
+
+        //toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) para transformar o valor em uma moeda.
+        //toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+
+
+
+    </script>
+</body>
+</html>
