@@ -16,8 +16,31 @@
 <body>
     <h1>Introdução ao DOM</h1>
     <p>Aqui está o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <div>Clique aqui</div>
 
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    
+    <div id="msgDiv">Clique aqui<br></div><br>
+    
+    <script>
+
+        document.write('<strong>Abaixo os elementos puxados por comandos DOM:</strong> <br><br>')
+
+        var p1 = window.document.getElementsByTagName('p')[0] 
+        //Utilizando o DOM, podemos utilizar o método "getElementsByTagName" para pegar um determinado elemento HTML, ('p') para pegar a tag <p> e [0] para pegar a primeira tag <p> que está no documento, já que o método utilizado está no plural (...ElementsByTagName").
+
+        window.document.write(p1.innerText) //o método "write()" escreve no documento. Utilizando este método e inserindo a variável "p1" que armazena o que o método do DOM pegou do documento HTML, utilizamos o "innerText" para pegar o conteúdo da variável "p1".
+        
+
+        var divId = window.document.getElementById('msgDiv')
+       //Aqui o elemento "div" do html é puxado para cá através do método getElementById do DOM, que por sua vez puxa o elemento pelo seu ID.
+
+        window.document.write('<br>' + divId.innerText)
+
+        var divSelector = window.document.querySelector('div#msgDiv')
+        //Aqui utilizamos por seletores com o "querySelector()" que por sua vez é o mais atual e recomendado e utiliza os seletores CSS(. para class) e HTML (# para ID's)
+        
+        window.document.write('<br><br>' + divSelector.innerText)
+
+    </script>
 </body>
 </html>
