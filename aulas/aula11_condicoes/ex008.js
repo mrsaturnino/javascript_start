@@ -1,0 +1,1 @@
+//console.log('') para saida de dados
