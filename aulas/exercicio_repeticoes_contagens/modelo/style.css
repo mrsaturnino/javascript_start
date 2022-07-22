@@ -1,6 +1,7 @@
 body {
     background: rgb(95, 98, 253);
     font: normal 15pt Verdana;
+    text-align: justify;
 }
 
 header {
@@ -15,6 +16,7 @@ section {
     width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.233);
+    
 }
 
 footer {
