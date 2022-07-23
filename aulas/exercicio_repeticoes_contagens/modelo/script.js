@@ -15,9 +15,17 @@ function contar() {
         let iniVal =  Number(ini.value) //valor da var "ini" sendo convertido em um número e armazenado na var "iniVal"
         let fimVal = Number(fim.value)
         let passoVal = Number(passo.value)
+        //pro caso de o valor do "passo" for igual a 0 (zero)
+
+        if (passoVal == 0) {
+            alert('Não é possível passar "de zero em zero".')
+            alert('Contando automaticamente de 1 em 1...')
+            passoVal = 1
+        }
+
 
         //criando a lógica das contagens
-        if (iniVal < f) {
+        if (iniVal < fimVal) {
 
             //contagem sucessiva
             for (let c = iniVal; c <= fimVal; c += passoVal) { //
