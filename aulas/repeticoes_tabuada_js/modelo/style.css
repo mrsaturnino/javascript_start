@@ -1,6 +1,10 @@
 body {
-    background: rgb(95, 98, 253);
+    background: rgb(0, 48, 3);
     font: normal 15pt Verdana;
+}
+
+h1 {
+    font: normal Arial;
 }
 
 header {
