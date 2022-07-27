@@ -12,13 +12,18 @@
         <h1>Analisador de Números</h1>
     </header>
     <section>
-        <div> <!--Inputs-->
-            <p>Números: <input type="number" id="txtNum" name="num"> <input type="button" value="Gerar valores" onclick="analyze()"></p></p>
+        <div> 
+                Número (entre 1 e 100):
+                <input type="number" name="textNum" id="textNum"> <!--digitacao-->
+                <input type="button" value="Adicionar" id="textAdd" onclick="adicionar()">
+                <br><br><select name="" id="textList" size="6">
+                    <option>Valores</option>
+                </select><br>
         </div>
-        <div> <!--Outputs-->
-            <select name="tabela" id="tabValues" size="10">
-                <option>Digite um número acima: </option>
-            </select>
+
+        <div id="result"> <!--Outputs-->
+            
+            <input type="button" value="Finalizar" onclick="executar()">
         </div>
     </section>
     <footer>
