@@ -17,7 +17,7 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.233);
 }
 
-select#valoresSaida {
+select#flista {
     width: 150px;
 }
 

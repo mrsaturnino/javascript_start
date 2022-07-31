@@ -12,18 +12,15 @@
         <h1>Analisador de Números</h1>
     </header>
     <section>
-        <div> 
-                Número (entre 1 e 100):
-                <input type="number" name="textNum" id="textNum"> <!--digitacao-->
-                <input type="button" value="Adicionar" id="textAdd" onclick="adicionar()">
-                <br><br><select name="" id="textList" size="6">
-                    <option>Valores</option>
-                </select><br>
+        <div>
+            Número (entre 1 e 100):
+            <input type="number" name="fnum" id="fnum">
+            <input type="button" value="Adicionar" onclick="adicionar()">
+            <br><br><select name="flista" id="flista" size="6"></select>
+            <br><input type="button" value="Finalizar" onclick="finalizar()">
         </div>
-
-        <div id="result"> <!--Outputs-->
+        <div id="res">
             
-            <input type="button" value="Finalizar" onclick="executar()">
         </div>
     </section>
     <footer>
