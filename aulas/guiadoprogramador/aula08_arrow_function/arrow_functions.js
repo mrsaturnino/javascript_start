@@ -11,7 +11,9 @@ var soma2 = (a,b) => {
 }
 
 var result2 = soma2(1,8)
-console.log(result2) //utilizando uma arrow function
+console.log(result2) 
+
+//utilizando uma arrow function
 
 //forma simplificada, omitindo o return:
 
