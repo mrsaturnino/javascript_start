@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulação DOM</title>
+  </head>
+  <body>
+    <p id="txt"></p>
+    <p class="exemplo"></p>
+    <p class="exemplo"></p>
+    <p class="exemplo"></p>
+
+    <script>
+      //ATRAVÉS DO ID HTML
+      document.getElementById("txt").innerHTML = "Texto modificado";
+      
+      /* 
+        Utilizamos o objeto 'document', executamos o seu método 'getElementById()' que puxa um elemento HTML através do seu 'id'; selecionamos o atributo innerHTML desse elemento puxado através do id 'txt' e mudamos o valor desse atributo para 'Texto modificado'.
+        */
+
+      //ATRAVÉS DE TAGS HTML
+      /* var x = document.getElementsByTagName('p');
+            x[0].innerHTML = 'Andre'
+                console.log(x); //verifique no console e verá que é um Array.
+        
+        Utilizamos o método 'getElementsByTagName()' para puxar todos os elementos HTML de determinada tag; O retorno desse método virá em formato de um Array, ou seja, cada tag estará em uma posição desse Array; Basta armazenar este método em uma variável e então acessar cada posição do array alterando os valores das tags.
+        */
+
+      //ATRAVÉS DAS 'CLASS'
+      /* var x = document.getElementsByClassName("exemplo");
+            x[0].innerHTML = "Could You Be Loved";
+            x[1].innerHTML = `It's Not Easy`;
+            x[2].innerHTML = "I Found You";
+                console.log(x);
+      
+        Utilizamos o método 'getElementsByClassName() da mesma forma que o 'getElementsByTagName()'
+      */
+
+      //ATRAVÉS DE SELETORES ID e CLASS('#' e '.')
+      /* document.querySelectorAll('p.exemplo'); //class
+        document.querySelectorAll('p#txt'); //id
+        
+        Isso evita alterar elementos de uma mesma tag, pois estamos sendo específicos utilizando os seletores de cada tag.
+       */
+    </script>
+  </body>
+</html>

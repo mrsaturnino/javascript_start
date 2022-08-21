@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulação DOM</title>
+  </head>
+  <body onload="carregar()">
+    <!--Evento do body ' onload="" ' para carregar algum conteúdo ao atualizar a página no navegador.-->
+
+    <!-- <h1 onclick="this.innerHTML = 'SURPRISE'">Clique aqui!</h1> -->
+    <!--Alteração simples de um elemento com o clique do mouse. O 'this.' se refere ao h1. -->
+
+    <h2 id="title">Clique aqui!</h2>
+
+    <input type="text" id="campo" onchange="campoPreenchido()">
+    
+    <script>
+      //EVENTOS DOM
+
+      function alterarTitulo() {
+        document.getElementById("title").innerHTML = "Titulo alterado!";
+      }
+      document.getElementById("title").onclick = alterarTitulo;
+      
+        //Alterando o valor de um documento HTML com o clique, através de uma função.
+
+      /*
+      function carregar() {
+        alert('Página carregada!')
+      }
+        Carregando o conteúdo "alert()" ao atualizar a página com o evento "onload" na tag <body>.
+      */
+    
+      /*
+      function campoPreenchido() {
+        alert('campo preenchido!');
+      }
+        Executando uma função ao um campo (input) ser alterado com o evento "onchange".
+      */
+    </script>
+  </body>
+</html>
