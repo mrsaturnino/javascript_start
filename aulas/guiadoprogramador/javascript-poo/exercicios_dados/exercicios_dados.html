@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Cassino</title>
+    <style>
+      * {
+        margin: 5;
+        padding: 0;
+      }
+      body {
+        background-color: antiquewhite;
+        text-align: center;
+      }
+
+      input {
+        width: 50px;
+        margin: 15px;
+      }
+
+      #botao {
+        display: block;
+        background-color: white;
+        width: 60px;
+        text-align: center;
+        padding: 5px;
+        margin: auto;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dados de Cassino</h1>
+    <p>Digite o intervalo abaixo:</p>
+
+        <input type="text" class="num1"/>
+        
+        <input type="text" class="num2"/>
+        
+        <input id="botao" type="button" value="Rolar" onclick="gerarNumero()">
+
+    <div id="result"></div>
+
+    <script src="logica_dados.js"></script>
+  </body>
+</html>
